@@ -1,21 +1,20 @@
 <div class="row">
   <div class="col-lg-4 col-md-4 col-sm-4">
     <h4>Today's Message</h4>
-    <p id="messageOfTheDay">
-      <!--<%= message %>-->TODO: Get today's message</p>
+    <p id="messageOfTheDay">{{messageOfTheDay}}</p>
   </div>
 
   <div class="col-lg-4 col-md-4 col-sm-4">
     <h4>Previous Messages</h4>
 
     <!-- datepicker using angular-moment-picker -->
-    <div class="input-group" moment-picker="ctrl.datepicker" format="MM/DD/YYYY">
+    <div class="input-group" moment-picker="date" format="MM/DD/YYYY">
       <p>Date:
-        <input class="" placeholder="Select a date" ng-model="ctrl.datepicker" ng-model-options="{ updateOn: 'blur' }">
+        <input class="" placeholder="Select a date" ng-model="date" ng-model-options="{ updateOn: 'blur' }">
       </p>
     </div>
 
-    <p><input type="button" id="messageBtn" class="btn btn-lg btn-success" role="button" value="Get Message"></p>
+    <p><input ng-click="getMessageByDate(date)" type="button" id="messageBtn" class="btn btn-lg btn-success" role="button" value="Get Message"></p>
   </div>
 
   <div id="messageByDate" class="col-lg-4 col-md-4 col-sm-4" style="display:none;">

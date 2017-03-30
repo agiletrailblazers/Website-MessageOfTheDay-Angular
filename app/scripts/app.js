@@ -25,7 +25,7 @@ angular
         controller: 'motd-Controller',
         controllerAs: 'motd'
       })
-      .when('/motd-week', {
+      .when('/week', {
         templateUrl: 'views/motd-week.html',
         controller: 'motd-Week-Controller',
         controllerAs: 'motd-week'

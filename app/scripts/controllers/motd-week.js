@@ -8,7 +8,7 @@
  * Controller of the messageOfTheDayAngularApp
  */
 angular.module('messageOfTheDayAngularApp')
-  .controller('motd-Week-Controller', function ($scope) {
+  .controller('motd-Week-Controller', function ($scope, $http) {
     $scope.$parent.title = "Messages of the Week";
-    $scope.messages = ['Monday','Tuesday','Wednesday'];
+    $scope.messages = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   });
