@@ -1,12 +1,25 @@
-# message-of-the-day-angular
+# Message of the Day - AngularJS
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.16.0.
+This project is a recreation of the Message of the Day website written with AngularJS
 
-## Build & development
+Note: Currently the API must be running locally
 
-Run `grunt` for building and `grunt serve` for preview.
+## Install and Build
+Install dependencies for grunt using npm and bower
+```
+$> npm install
+$> bower install
+```
 
-## Testing
+Build
+```
+grunt --force
+```
 
+Run
+```
+grunt serve
+```
+
+## Testing (To be added)
 Running `grunt test` will run the unit tests with karma.

@@ -14,7 +14,7 @@ angular.module('messageOfTheDayAngularApp')
     // var targetURL = config("properties").apiServerUrl + '/messages';
     $http({
       method: 'GET',
-      url: 'http://atbapi.org:8080' + '/messages'
+      url: 'http://localhost:8080' + '/messages'
     }).
     then(function(response) {
       console.log("Response", response);
@@ -29,7 +29,7 @@ angular.module('messageOfTheDayAngularApp')
     $scope.getMessageByDate = function(dateString) {
         $http({
           method: 'GET',
-          url: 'http://atbapi.org:8080' + '/messages/' + new Date(dateString).getTime()
+          url: 'http://localhost:8080' + '/messages/' + new Date(dateString).getTime()
         }).
         then(function(response) {
           if (response.status == 200) {
