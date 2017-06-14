@@ -39,6 +39,7 @@ angular
     envServiceProvider.config({
       domains: {
         local: ['localhost', '127.0.0.1'],
+        localPython: ['localPython'],
         development: ['update for deployment'],
         buildVerification: ['update for deployment'],
         production: ['update for deployment']
@@ -46,6 +47,9 @@ angular
       vars: {
         local: {
           apiServerUrl: 'http://localhost:8080'
+        },
+        localPython: {
+          apiServerUrl: 'http://localhost:8000'
         },
         development: {
           apiServerUrl: 'http://54.174.93.238:8081/motd'
